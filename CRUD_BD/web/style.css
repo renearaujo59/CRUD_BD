@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 19, 2017, 1:26:29 PM
+    Author     : rene_araujo
+*/
+
+body { 
+    background: black; 
+}
+
+h1, h2, h3 {
+    font-family: Calibri;
+    color: whitesmoke;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-family: Verdana;
+    text-decoration: none;
+}
+
+table {  
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 640px; 
+    border-collapse: 
+        collapse; border-spacing: 0; 
+}
+
+td, th {  
+    border: 1px solid transparent; /* Borda invisivel */
+    height: 30px; 
+    transition: all 0.3s;  /* Transicao simples para efeito flutuante */
+}
+
+th {  
+    background: #DFDFDF;  /* Escurecer header um pouco */
+    font-weight: bold;
+}
+
+td {  
+    background: #FAFAFA;
+    text-align: center;
+}
+
+/* Celulas das linhas 2,4,6... sao de uma cor */        
+tr:nth-child(even) td { background: #F1F1F1; }   
+
+/* Celulas das linhas 1,3,5... sao de outra cor (nao se aplica a header)  */        
+tr:nth-child(odd) td { background: #FEFEFE; }  
+
+/* efeito celula flutuante */
+tr td:hover { background: #666; color: #FFF; } 
